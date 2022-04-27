@@ -20,11 +20,6 @@ const places = [
     url: "/location/paris-2968815",
   },
   {
-    name: "Tokyo",
-    image: TokyoImage,
-    url: "/location/tokyo-1850147",
-  },
-  {
     name: "New York",
     image: NewYorkImage,
     url: "/location/new-york-city-5128581",
@@ -42,6 +37,7 @@ export default function FamousPlaces() {
                 <a>
                   <div className="places__image-wrapper">
                     <Image
+                      className="famousPlaceImg"
                       src={place.image}
                       alt={`${place.name} Image`}
                       layout="fill"
